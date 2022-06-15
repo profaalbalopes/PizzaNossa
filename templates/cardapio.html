@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Cardápio
+{% endblock %}
+
+{% block conteudo %}
+
+  {% if promocao %}
+    <img src="/static/promo.png">
+  {% endif %}
+   <div class="card" style="width: 18rem;">
+      <img src="/static/fc.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Frango com Catupiry</h5>
+        <p class="card-text"> P: R$ 35,00 / M: R$ 45,00 / G: R$ 55,00 </p>
+        <a href="#" class="btn btn-primary">Pedir</a>
+      </div>
+    </div>
+
+
+<ul class="list-group">
+    <li class="list-group-item">Frango com Catupiry - P: R$ 35,00 / M: R$ 45,00 / G: R$ 55,00</li>
+    <li class="list-group-item">Sertaneja - P: R$ 40,00 / M: R$ 50,00 / G: R$ 60,00</li>
+    <li class="list-group-item">Camarão - P: R$ 60,00 / M: R$ 70,00 / G: R$ 80,00</li>
+</ul>
+{% endblock %}

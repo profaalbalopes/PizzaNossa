@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    Avaliações
+{% endblock %}
+
+{% block conteudo %}
+	<ul>
+		{% for c in clientes %}
+			<li> Avaliação de {{ c.nome }} - Nota: 
+        {% for n in range(c.nota) %}
+        <img src="/static/estrela.png" width="10px" height="10px">
+        {% endfor %}
+      </li>
+		{% endfor %}
+	</ul>
+
+    <div class="card" style="width: 18rem;">
+      <img src="/static/5estrelas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cliente 1</h5>
+        <p class="card-text">Essa pizzaria é muito bacana! </p>
+        <a href="#" class="btn btn-primary">Like</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="/static/5estrelas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cliente 2</h5>
+        <p class="card-text">Essa pizzaria é muito bacana! </p>
+        <a href="#" class="btn btn-primary">Like</a>
+      </div>
+    </div>
+        <div class="card" style="width: 18rem;">
+      <img src="/static/5estrelas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cliente 3</h5>
+        <p class="card-text">Essa pizzaria é muito bacana! </p>
+        <a href="#" class="btn btn-primary">Like</a>
+      </div>
+    </div>
+        <div class="card" style="width: 18rem;">
+      <img src="/static/5estrelas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cliente 4</h5>
+        <p class="card-text">Essa pizzaria é muito bacana! </p>
+        <a href="#" class="btn btn-primary">Like</a>
+      </div>
+    </div>
+        <div class="card" style="width: 18rem;">
+      <img src="/static/5estrelas.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cliente 5</h5>
+        <p class="card-text">Essa pizzaria é muito bacana! </p>
+        <a href="#" class="btn btn-primary">Like</a>
+      </div>
+    </div>
+
+{% endblock %}
