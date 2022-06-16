@@ -1,0 +1,56 @@
+[
+  {"sabor": "Frango com catupiry",
+   "imagem": "frangocatupiry.jpg",
+   "ingredientes": "frango, catupiry, molho de tomate, orégano",
+   "preco": {
+     "p": 45.00,
+     "m": 50.00,
+     "g": 60.00
+   }
+  },
+  {"sabor": "Sertaneja",
+   "imagem": "sertaneja.jpg",
+   "ingredientes": "carne de sol, coalho, molho de tomate, orégano",
+   "preco": {
+     "p": 50.00,
+     "m": 60.00,
+     "g": 70.00
+   }
+  },
+  {"sabor": "Camarão",
+  "ingredientes": "camarão, muzzarela, molho de tomate, orégano",
+   "imagem": "camarao.jpg",
+   "preco": {
+     "p": 65.00,
+     "m": 70.00,
+     "g": 80.00
+   }
+  },
+  {"sabor": "Napolitana",
+  "ingredientes": "tomate, molho de tomate, orégano",
+   "imagem": "napolitana.jpg",
+   "preco": {
+     "p": 45.00,
+     "m": 50.00,
+     "g": 60.00
+   }
+  },
+  {"sabor": "Chocolate",
+   "imagem": "chocolate.jpg",
+   "ingredientes": "chocolate, muzzarela, morango",
+   "preco": {
+     "p": 50.00,
+     "m": 60.00,
+     "g": 70.00
+   }
+  },
+  {"sabor": "Cebola",
+   "imagem": "cebola.jpg",
+   "ingredientes": "cebola, calabreza, azeitona",
+   "preco": {
+     "p": 50.00,
+     "m": 60.00,
+     "g": 70.00
+   }
+  }
+]

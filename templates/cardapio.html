@@ -9,6 +9,27 @@ Cardápio
   {% if promocao %}
     <img src="/static/promo.png">
   {% endif %}
+  <div class="row">
+  {% for p in pizzas %}
+    <div class="col-sm-6">
+     <div class="card" style="width: 18rem;">
+        <img src="/static/assets/{{p.imagem}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.sabor}}</h5>
+          <p class="card-text">{{p.ingredientes}}</p>
+          {% for tamanho in p.preco %}
+            <a href="#" class="btn btn-primary"> {{tamanho.upper()}}: R$ {{p.preco.get(tamanho)}}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+<!--
+
+
    <div class="card" style="width: 18rem;">
       <img src="/static/fc.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -24,4 +45,6 @@ Cardápio
     <li class="list-group-item">Sertaneja - P: R$ 40,00 / M: R$ 50,00 / G: R$ 60,00</li>
     <li class="list-group-item">Camarão - P: R$ 60,00 / M: R$ 70,00 / G: R$ 80,00</li>
 </ul>
+
+-->
 {% endblock %}

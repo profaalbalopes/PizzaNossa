@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import json
 
 app = Flask(__name__)
 
@@ -8,7 +9,9 @@ def index():
 
 @app.route('/cardapio')
 def cardapio():
-    return render_template('cardapio.html', promocao=False)
+  arquivo = open("static/pizzas.json")
+  pizzas = json.load(arquivo)
+  return render_template('cardapio.html', promocao=False, pizzas=pizzas)
 
 @app.route('/avaliacoes')
 def avaliacoes():
